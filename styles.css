@@ -1,0 +1,84 @@
+body {
+    background: #101820;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #00aaff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+#logo {
+    height: 50px;
+    margin-right: 15px;
+}
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+main {
+    padding: 20px;
+}
+#playlist-section {
+    margin-bottom: 20px;
+}
+#playlist-url {
+    width: 60%;
+    padding: 10px;
+    font-size: 1em;
+}
+#load-playlist-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #00aaff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#channels-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.channel-item {
+    background: #222;
+    padding: 12px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    min-width: 150px;
+    margin-bottom: 10px;
+    transition: background 0.2s;
+}
+.channel-item.selected, .channel-item:focus {
+    background: #00aaff;
+    outline: 2px solid #fff;
+}
+#video-player {
+    width: 100%;
+    max-width: 900px;
+    height: 480px;
+    background: #000;
+    display: block;
+    margin: 0 auto;
+}
+#channel-info {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+.hidden {
+    display: none;
+}
+footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>WHK Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" id="logo" alt="WHK Player Logo">
+        <h1>WHK Player</h1>
+    </header>
+    <main>
+        <section id="playlist-section">
+            <input type="text" id="playlist-url" placeholder="Collez l'URL de votre playlist M3U ici">
+            <button id="load-playlist-btn">Charger Playlist</button>
+        </section>
+        <section id="channels-section" class="hidden">
+            <div id="channels-list"></div>
+        </section>
+        <section id="player-section" class="hidden">
+            <video id="video-player" controls autoplay></video>
+            <div id="channel-info"></div>
+        </section>
+    </main>
+    <footer>
+        <p>WHK Player © 2025</p>
+    </footer>
+    <script src="hls.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
